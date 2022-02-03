@@ -1,4 +1,4 @@
-package com.coderscampus.assignment10.dto;
+package com.coderscampus.assignment10.dto.mealplanner;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 

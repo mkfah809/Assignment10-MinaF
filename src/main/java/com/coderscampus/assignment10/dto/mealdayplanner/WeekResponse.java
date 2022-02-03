@@ -1,4 +1,4 @@
-package com.coderscampus.assignment10.dto.day;
+package com.coderscampus.assignment10.dto.mealdayplanner;
 
 public class WeekResponse {
 	private Days days;
