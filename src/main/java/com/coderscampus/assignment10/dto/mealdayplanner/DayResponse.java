@@ -1,16 +1,16 @@
-package com.coderscampus.assignment10.dto.mealplanner;
+package com.coderscampus.assignment10.dto.mealdayplanner;
 
 import java.util.List;
 import java.util.Objects;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-public class MealResponse {
+public class DayResponse {
 	
 	@JsonProperty("meals")
 	private List<Meals> meals;
 	@JsonProperty("nutrients")
-	private MealNutrients nutrients;
+	private DayNutrients nutrients;
 	
 
 	@Override
@@ -27,7 +27,7 @@ public class MealResponse {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		MealResponse other = (MealResponse) obj;
+		DayResponse other = (DayResponse) obj;
 		return Objects.equals(meals, other.meals) && Objects.equals(nutrients, other.nutrients);
 	}
 
@@ -41,11 +41,11 @@ public class MealResponse {
 		this.meals = meals;
 	}
 
-	public MealNutrients getNutrients() {
+	public DayNutrients getNutrients() {
 		return nutrients;
 	}
 
-	public void setNutrients(MealNutrients nutrients) {
+	public void setNutrients(DayNutrients nutrients) {
 		this.nutrients = nutrients;
 	}
 }
