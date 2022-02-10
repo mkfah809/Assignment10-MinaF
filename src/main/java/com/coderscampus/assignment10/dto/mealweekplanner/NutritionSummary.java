@@ -5,7 +5,7 @@ import java.util.Objects;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-public class NutritionSummary extends WeekNutrients {
+public class NutritionSummary  {
 	@JsonProperty("nutrients")
 	private List<WeekNutrients> nutrients;
 
