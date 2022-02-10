@@ -3,17 +3,20 @@ package com.coderscampus.assignment10.dto.mealweekplanner;
 import java.util.List;
 import java.util.Objects;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 public class WeekResponse {
-	private List<Days> days;
+	@JsonProperty("week")
+	private List<Days> week;
 
 	@Override
 	public String toString() {
-		return "WeekResponse [days=" + days + "]";
+		return "WeekResponse [week=" + week + "]";
 	}
 
 	@Override
 	public int hashCode() {
-		return Objects.hash(days);
+		return Objects.hash(week);
 	}
 
 	@Override
@@ -25,15 +28,14 @@ public class WeekResponse {
 		if (getClass() != obj.getClass())
 			return false;
 		WeekResponse other = (WeekResponse) obj;
-		return Objects.equals(days, other.days);
+		return Objects.equals(week, other.week);
 	}
 
-	public List<Days> getDays() {
-		return days;
+	public List<Days> getWeek() {
+		return week;
 	}
 
-	public void setDays(List<Days> days) {
-		this.days = days;
+	public void setWeek(List<Days> week) {
+		this.week = week;
 	}
-
 }

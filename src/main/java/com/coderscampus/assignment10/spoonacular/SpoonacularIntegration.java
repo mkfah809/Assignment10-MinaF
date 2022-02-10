@@ -32,9 +32,9 @@ public class SpoonacularIntegration {
 				rt.getForEntity(
 						UriComponentsBuilder.fromHttpUrl("https://api.spoonacular.com/mealplanner/generate")
 						.queryParam("timeFrame", "week")
-						.queryParam("targetCalories", "1000")
-						.queryParam("diet", "vegetarian")
-						.queryParam("exclude", "shellfish, olives")
+						.queryParam("targetCalories", numCalories)
+						.queryParam("diet", diet)
+						.queryParam("exclude", exclusions)
 						.queryParam("apiKey", "b50f44eea7594272b307fa06916b553d")
 							.build().toUri(), WeekResponse.class);
 		

@@ -2,7 +2,7 @@ package com.coderscampus.assignment10.dto.mealdayplanner;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-public class DayNutrients {
+public class Nutrients {
 	@JsonProperty("calories")
 	private Double calories;
 	@JsonProperty("carbohydrates")

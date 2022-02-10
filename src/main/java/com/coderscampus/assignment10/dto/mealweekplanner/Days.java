@@ -6,83 +6,29 @@ import java.util.Objects;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class Days {
-	@JsonProperty("nutritionSummary")
-	private List<NutritionSummary> nutritionSummary;
-	@JsonProperty("nutritionSummaryBreakfast")
-	private List<nutritionSummaryBreakfast> nutritionSummaryBreakfast;
-	@JsonProperty("nutritionSummaryLunch")
-	private List<nutritionSummaryLunch> nutritionSummaryLunch;
-	@JsonProperty("nutritionSummaryDinner")
-	private List<nutritionSummaryDinner> nutritionSummaryDinner;
-	@JsonProperty("date")
-	private Integer date;
-	@JsonProperty("day")
-	private String day;
-	@JsonProperty("items")
-	private List<Items> items;
-	
-	public List<NutritionSummary> getNutritionSummary() {
-		return nutritionSummary;
+	@JsonProperty("monday")
+	private List<Monday> monday;
+	@JsonProperty("tuesday")
+	private List<Tuesday> tuesday;
+	@JsonProperty("wednesday")
+	private List<Wednesday> wednesday;
+	@JsonProperty("thursday")
+	private List<Thursday> thursday;
+	@JsonProperty("friday")
+	private List<Friday> friday;
+	@JsonProperty("saturday")
+	private List<Saturday> saturday;
+	@JsonProperty("sunday")
+	private List<Sunday> sunday;
+	@Override
+	public String toString() {
+		return "WeekResponse [monday=" + monday + ", tuesday=" + tuesday + ", wednesday=" + wednesday + ", thursday="
+				+ thursday + ", friday=" + friday + ", saturday=" + saturday + ", sunday=" + sunday + "]";
 	}
-
-	public void setNutritionSummary(List<NutritionSummary> nutritionSummary) {
-		this.nutritionSummary = nutritionSummary;
-	}
-
-	public List<nutritionSummaryBreakfast> getNutritionSummaryBreakfast() {
-		return nutritionSummaryBreakfast;
-	}
-
-	public void setNutritionSummaryBreakfast(List<nutritionSummaryBreakfast> nutritionSummaryBreakfast) {
-		this.nutritionSummaryBreakfast = nutritionSummaryBreakfast;
-	}
-
-	public List<nutritionSummaryLunch> getNutritionSummaryLunch() {
-		return nutritionSummaryLunch;
-	}
-
-	public void setNutritionSummaryLunch(List<nutritionSummaryLunch> nutritionSummaryLunch) {
-		this.nutritionSummaryLunch = nutritionSummaryLunch;
-	}
-
-	public List<nutritionSummaryDinner> getNutritionSummaryDinner() {
-		return nutritionSummaryDinner;
-	}
-
-	public void setNutritionSummaryDinner(List<nutritionSummaryDinner> nutritionSummaryDinner) {
-		this.nutritionSummaryDinner = nutritionSummaryDinner;
-	}
-
 	@Override
 	public int hashCode() {
-		return Objects.hash(date, day, items, nutritionSummary, nutritionSummaryBreakfast, nutritionSummaryDinner,
-				nutritionSummaryLunch);
+		return Objects.hash(friday, monday, saturday, sunday, thursday, tuesday, wednesday);
 	}
-
-	public Integer getDate() {
-		return date;
-	}
-
-	public void setDate(Integer date) {
-		this.date = date;
-	}
-
-	public String getDay() {
-		return day;
-	}
-
-	public void setDay(String day) {
-		this.day = day;
-	}
-
-	public List<Items> getItems() {
-		return items;
-	}
-
-	public void setItems(List<Items> items) {
-		this.items = items;
-	}
-
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -92,19 +38,51 @@ public class Days {
 		if (getClass() != obj.getClass())
 			return false;
 		Days other = (Days) obj;
-		return Objects.equals(date, other.date) && Objects.equals(day, other.day) && Objects.equals(items, other.items)
-				&& Objects.equals(nutritionSummary, other.nutritionSummary)
-				&& Objects.equals(nutritionSummaryBreakfast, other.nutritionSummaryBreakfast)
-				&& Objects.equals(nutritionSummaryDinner, other.nutritionSummaryDinner)
-				&& Objects.equals(nutritionSummaryLunch, other.nutritionSummaryLunch);
+		return Objects.equals(friday, other.friday) && Objects.equals(monday, other.monday)
+				&& Objects.equals(saturday, other.saturday) && Objects.equals(sunday, other.sunday)
+				&& Objects.equals(thursday, other.thursday) && Objects.equals(tuesday, other.tuesday)
+				&& Objects.equals(wednesday, other.wednesday);
 	}
-
-	@Override
-	public String toString() {
-		return "Days [nutritionSummary=" + nutritionSummary + ", nutritionSummaryBreakfast=" + nutritionSummaryBreakfast
-				+ ", nutritionSummaryLunch=" + nutritionSummaryLunch + ", nutritionSummaryDinner="
-				+ nutritionSummaryDinner + ", date=" + date + ", day=" + day + ", items=" + items + "]";
+	public List<Monday> getMonday() {
+		return monday;
 	}
-
-	
+	public void setMonday(List<Monday> monday) {
+		this.monday = monday;
+	}
+	public List<Tuesday> getTuesday() {
+		return tuesday;
+	}
+	public void setTuesday(List<Tuesday> tuesday) {
+		this.tuesday = tuesday;
+	}
+	public List<Wednesday> getWednesday() {
+		return wednesday;
+	}
+	public void setWednesday(List<Wednesday> wednesday) {
+		this.wednesday = wednesday;
+	}
+	public List<Thursday> getThursday() {
+		return thursday;
+	}
+	public void setThursday(List<Thursday> thursday) {
+		this.thursday = thursday;
+	}
+	public List<Friday> getFriday() {
+		return friday;
+	}
+	public void setFriday(List<Friday> friday) {
+		this.friday = friday;
+	}
+	public List<Saturday> getSaturday() {
+		return saturday;
+	}
+	public void setSaturday(List<Saturday> saturday) {
+		this.saturday = saturday;
+	}
+	public List<Sunday> getSunday() {
+		return sunday;
+	}
+	public void setSunday(List<Sunday> sunday) {
+		this.sunday = sunday;
+	}
 }

@@ -11,7 +11,7 @@ import com.coderscampus.assignment10.dto.mealweekplanner.WeekResponse;
 import com.coderscampus.assignment10.spoonacular.SpoonacularIntegration;
 
 @RestController
-public class SpoonacularControllers {
+public class MealControllers {
 
 	@Autowired
 	SpoonacularIntegration spoonacularIntegeration;
