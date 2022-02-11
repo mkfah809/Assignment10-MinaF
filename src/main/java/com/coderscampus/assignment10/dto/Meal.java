@@ -1,8 +1,8 @@
-package com.coderscampus.assignment10.dto.mealdayplanner;
+package com.coderscampus.assignment10.dto;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-public class Meals {
+public class Meal {
 	@JsonProperty("id")
 	private Long id;
 	@JsonProperty("title")

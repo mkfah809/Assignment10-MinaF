@@ -1,4 +1,4 @@
-package com.coderscampus.assignment10.dto.mealdayplanner;
+package com.coderscampus.assignment10.dto;
 
 import java.util.List;
 import java.util.Objects;
@@ -8,7 +8,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 public class DayResponse {
 	
 	@JsonProperty("meals")
-	private List<Meals> meals;
+	private List<Meal> meals;
 	@JsonProperty("nutrients")
 	private Nutrients nutrients;
 	
@@ -32,12 +32,12 @@ public class DayResponse {
 	}
 
 
-	public List<Meals> getMeals() {
+	public List<Meal> getMeals() {
 		return meals;
 	}
 
 
-	public void setMeals(List<Meals> meals) {
+	public void setMeals(List<Meal> meals) {
 		this.meals = meals;
 	}
 

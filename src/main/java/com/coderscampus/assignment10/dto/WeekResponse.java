@@ -1,13 +1,12 @@
-package com.coderscampus.assignment10.dto.mealdayplanner;
+package com.coderscampus.assignment10.dto;
 
-import java.util.List;
 import java.util.Objects;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class WeekResponse {
-
-	private List<Days> week;
+	@JsonProperty("week")
+	private Week week;
 
 	@Override
 	public String toString() {
@@ -31,11 +30,11 @@ public class WeekResponse {
 		return Objects.equals(week, other.week);
 	}
 
-	public List<Days> getWeek() {
+	public Week getWeek() {
 		return week;
 	}
 
-	public void setWeek(List<Days> week) {
+	public void setWeek(Week week) {
 		this.week = week;
 	}
 }

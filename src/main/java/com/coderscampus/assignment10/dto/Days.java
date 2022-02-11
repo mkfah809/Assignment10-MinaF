@@ -1,9 +1,9 @@
-package com.coderscampus.assignment10.dto.mealdayplanner;
+package com.coderscampus.assignment10.dto;
 
 import java.util.List;
 import java.util.Objects;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
+
 
 public class Days {
 	
