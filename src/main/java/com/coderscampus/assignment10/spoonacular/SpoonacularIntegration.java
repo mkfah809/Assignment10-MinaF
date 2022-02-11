@@ -6,7 +6,7 @@ import org.springframework.web.client.RestTemplate;
 import org.springframework.web.util.UriComponentsBuilder;
 
 import com.coderscampus.assignment10.dto.mealdayplanner.DayResponse;
-import com.coderscampus.assignment10.dto.mealweekplanner.WeekResponse;
+import com.coderscampus.assignment10.dto.mealdayplanner.WeekResponse;
 
 @Service
 public class SpoonacularIntegration {
@@ -21,7 +21,7 @@ public class SpoonacularIntegration {
 								.queryParam("diet", diet)
 								.queryParam("exclude", exclusions)
 								.queryParam("apiKey", "b50f44eea7594272b307fa06916b553d")
-								.build().toUri(),DayResponse.class);
+								.build().toUri(),DayResponse.class); //deserializing
 		System.out.println(dayResponse.getBody());
 		return dayResponse;
 	}

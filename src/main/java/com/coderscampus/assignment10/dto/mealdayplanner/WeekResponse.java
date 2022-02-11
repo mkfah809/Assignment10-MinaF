@@ -1,4 +1,4 @@
-package com.coderscampus.assignment10.dto.mealweekplanner;
+package com.coderscampus.assignment10.dto.mealdayplanner;
 
 import java.util.List;
 import java.util.Objects;
@@ -6,7 +6,7 @@ import java.util.Objects;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class WeekResponse {
-	@JsonProperty("week")
+
 	private List<Days> week;
 
 	@Override

@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import com.coderscampus.assignment10.dto.mealdayplanner.DayResponse;
-import com.coderscampus.assignment10.dto.mealweekplanner.WeekResponse;
+import com.coderscampus.assignment10.dto.mealdayplanner.WeekResponse;
 import com.coderscampus.assignment10.spoonacular.SpoonacularIntegration;
 
 @RestController
